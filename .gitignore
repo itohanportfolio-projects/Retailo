@@ -1,0 +1,5 @@
+.env
+/myenv/*
+
+# Ignore all files in the myenv directory
+!.gitignore

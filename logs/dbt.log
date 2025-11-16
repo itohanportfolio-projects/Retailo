@@ -1,0 +1,59 @@
+[0m01:36:52.212863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA532AE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA72C0EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA72C0CD0>]}
+
+
+============================== 01:36:52.230816 | 05ea36ab-5f19-4d4d-93a7-75e25aad717a ==============================
+[0m01:36:52.230816 [info ] [MainThread]: Running with dbt=1.10.15
+[0m01:36:52.233832 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'no_print': 'None', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\itoha\\.dbt', 'invocation_command': 'dbt init retailio', 'printer_width': '80', 'target_path': 'None'}
+[0m01:36:52.544982 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\itoha\.dbt
+[0m01:36:52.559440 [debug] [MainThread]: Starter project path: C:\DataEngineering\Retail-elt\myenv\lib\site-packages\dbt\include\starter_project
+[0m01:36:52.741478 [info ] [MainThread]: 
+Your new dbt project "retailio" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:36:52.741478 [info ] [MainThread]: Setting up your profile.
+[0m01:38:30.218076 [info ] [MainThread]: Profile retailio written to C:\Users\itoha\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m01:38:30.227512 [debug] [MainThread]: Command `dbt init` succeeded at 01:38:30.227512 after 98.10 seconds
+[0m01:38:30.229531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA532AE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA73C63E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA72C0C10>]}
+[0m01:38:30.229531 [debug] [MainThread]: Flushing usage events
+[0m01:38:30.679006 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:15:25.746312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002997E8DB910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002997FA8CB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002997FA8CF70>]}
+
+
+============================== 22:15:25.746312 | d5f30d81-02a1-49b9-a630-7dedf304cd4b ==============================
+[0m22:15:25.746312 [info ] [MainThread]: Running with dbt=1.10.15
+[0m22:15:25.746312 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'profiles_dir': 'C:\\Users\\itoha\\.dbt', 'static_parser': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'write_json': 'True', 'invocation_command': 'dbt init data_pipeline', 'indirect_selection': 'eager', 'introspect': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'target_path': 'None', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'log_path': 'logs', 'partial_parse': 'True', 'warn_error': 'None', 'no_print': 'None', 'version_check': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m22:15:25.799079 [debug] [MainThread]: Starter project path: C:\Users\itoha\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\include\starter_project
+[0m22:15:25.941127 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:15:25.941127 [info ] [MainThread]: Setting up your profile.
+[0m22:21:45.459609 [info ] [MainThread]: Profile data_pipeline written to C:\Users\itoha\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:21:45.470353 [debug] [MainThread]: Command `dbt init` succeeded at 22:21:45.467568 after 379.82 seconds
+[0m22:21:45.470353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002997E8DB910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029918C24610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029918C24850>]}
+[0m22:21:45.472369 [debug] [MainThread]: Flushing usage events
+[0m22:21:45.858161 [debug] [MainThread]: An error was encountered while trying to flush usage events
