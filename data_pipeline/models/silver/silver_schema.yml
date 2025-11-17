@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Silver fact table with cleaned, ready-for-analytics orders."
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: revenue
+        tests:
+          - not_null

@@ -32,7 +32,16 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   data_pipeline:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      materialized: table  # other options: view, incremental, ephemeral 
-      snowflake_warehouse: AIRBYTE_WAREHOUSE
+    staging:
+            #snowflake_warehouse: AIRBYTE_WAREHOUSE
+      schema: STAGING_SCHEMA        # all staging models will land in this schema
+      +materialized: view
+    
+    silver:
+      +schema: SILVER_SCHEMA            # silver models also land here
+      +materialized: view
+
+    gold:
+      +schema: GOLD_SCHEMA           # gold models also land here
+      +materialized: table
     

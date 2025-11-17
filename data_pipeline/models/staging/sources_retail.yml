@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: retail_raw       
+    database: AIRBYTE_DATABASE
+    schema: AIRBYTE_SCHEMA          #  raw Airbyte schema
+    description: "Raw tables ingested from S3 by Airbyte."
+
+    tables:
+      - name: RETAILIO_1
+        description: "Raw orders from S3 via Airbyte."
+      # - name: RETAILIO_1
+      #   description: "Raw customers from S3 via Airbyte."
+
+models:
+  - name: stg_orders
+    description: "Staging model: cleaned orders from raw Airbyte table."
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
+

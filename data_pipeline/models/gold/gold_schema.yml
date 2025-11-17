@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: sales_summary_daily
+    description: "Gold aggregate: daily sales metrics."
+    columns:
+      - name: order_date
+        tests:
+          - not_null
+      - name: total_revenue
+        tests:
+          - not_null
