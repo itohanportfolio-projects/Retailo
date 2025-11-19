@@ -5,8 +5,15 @@ models:
     description: "Gold aggregate: daily sales metrics."
     columns:
       - name: order_date
+        description: "Date of the orders."
         tests:
           - not_null
       - name: total_revenue
+        description: "Total revenue for that day."
         tests:
           - not_null
+      - name: total_quantity
+        description: "Total quantity sold for that day."
+      - name: order_count
+        description: "Number of unique orders for that day."
+

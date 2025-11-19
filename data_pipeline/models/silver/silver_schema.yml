@@ -5,8 +5,16 @@ models:
     description: "Silver fact table with cleaned, ready-for-analytics orders."
     columns:
       - name: order_id
+        description: "Unique order ID."
         tests:
           - not_null
+      - name: customer_id
+        description: "Customer ID associated with the order."
+        tests:
+          - not_null
+      - name: order_timestamp
+        description: "Date of the order."
       - name: revenue
+        description: "Revenue for this order (quantity * price)."
         tests:
           - not_null

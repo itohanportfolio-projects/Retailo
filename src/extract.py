@@ -20,10 +20,10 @@ session = boto3.Session(
     # endpoint_url='https://custom.endpoint.url'
 )
 
+repo_root = os.path.dirname(os.path.dirname(__file__))   # repo root/ src/
 datasets = {
-   "products": "C:\DataEngineering\Retail-elt\data\products.csv",
-   "customers": "C:\DataEngineering\Retail-elt\data\customers.csv",
-  
+    "products": os.path.join(repo_root, "data", "products.csv"),
+    "customers": os.path.join(repo_root, "data", "customers.csv"),
 }
 
 for name, path in datasets.items():

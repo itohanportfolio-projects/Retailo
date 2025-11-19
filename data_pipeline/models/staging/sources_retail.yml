@@ -1,3 +1,4 @@
+#for production create different streams for customers
 version: 2
 
 sources:
@@ -9,12 +10,10 @@ sources:
     tables:
       - name: RETAILIO_1
         description: "Raw orders from S3 via Airbyte."
-      # - name: RETAILIO_1
-      #   description: "Raw customers from S3 via Airbyte."
-
+      
 models:
   - name: stg_orders
-    description: "Staging model: cleaned orders from raw Airbyte table."
+    description: "Staging model: cleaned orders from raw RETAILIO_1."
     columns:
       - name: order_id
         tests:
@@ -23,4 +22,15 @@ models:
       - name: customer_id
         tests:
           - not_null
+      - name: order_date
+        tests:
+          - not_null
+
+  - name: stg_customers
+    description: "Cleaned customers staging model."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
 

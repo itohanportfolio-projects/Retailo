@@ -34,7 +34,7 @@ models:
     # Config indicated by + and applies to all files under models/example/
     staging:
             #snowflake_warehouse: AIRBYTE_WAREHOUSE
-      schema: STAGING_SCHEMA        # all staging models will land in this schema
+      +schema: STAGING_SCHEMA        # all staging models will land in this schema
       +materialized: view
     
     silver:
